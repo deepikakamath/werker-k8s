@@ -25,7 +25,7 @@ spec:
         imagePullPolicy: Always
         name: rest-simpleapp
         ports:
-        - containerPort: 80
+        - containerPort: 3000
           protocol: TCP
       imagePullSecrets:
       - name: wrelease
@@ -39,7 +39,7 @@ spec:
   selector:
     run: rest-simpleapp
   ports:
-    - port: 80
+    - port: 8088
       protocol: TCP
-      targetPort: 80
+      targetPort: 3000
   type: ClusterIP
