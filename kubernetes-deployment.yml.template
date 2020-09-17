@@ -25,7 +25,7 @@ spec:
         imagePullPolicy: Always
         name: rest-simpleapp
         ports:
-        - containerPort: 3000
+        - containerPort: 80
           protocol: TCP
       imagePullSecrets:
       - name: wrelease
@@ -39,7 +39,7 @@ spec:
   selector:
     run: rest-simpleapp
   ports:
-    - port: 8088
+    - port: 80
       protocol: TCP
-      targetPort: 3000
+      targetPort: 80
   type: LoadBalancer
