@@ -36,10 +36,10 @@ kind: Service
 metadata:
   name: rest-simpleapp-svc
 spec:
-  selector:
+ selector:
     run: rest-simpleapp
-  ports:
-    - port: 8088
-      protocol: TCP
-      targetPort: 3000
-  type: LoadBalancer
+  #ports:
+  #  - port: 8088
+   #   protocol: TCP
+   #   targetPort: 3000
+  #type: LoadBalancer
