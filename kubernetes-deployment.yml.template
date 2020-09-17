@@ -38,8 +38,8 @@ metadata:
 spec:
   selector:
     run: rest-simpleapp
-  #ports:
-  #  - port: 80
-  #    protocol: TCP
-  #    targetPort: 80
-  #type: LoadBalancer
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 80
+  type: LoadBalancer
