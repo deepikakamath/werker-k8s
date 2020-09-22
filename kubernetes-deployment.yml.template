@@ -9,6 +9,9 @@ metadata:
   labels:
     run: rest-simpleapp
 spec:
+  selector:
+    matchLabels:
+      app: rest-simpleapp
   replicas: 1
   strategy:
     rollingUpdate:
