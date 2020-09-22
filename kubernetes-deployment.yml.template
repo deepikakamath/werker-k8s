@@ -21,7 +21,7 @@ spec:
   template:
     metadata:
       labels:
-        run: rest-simpleapp
+        app: rest-simpleapp
     spec:
       containers:
       - image: nginx
